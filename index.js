@@ -4,4 +4,5 @@ module.exports = function(a, b){
   fn.prototype = b.prototype;
   a.prototype = new fn;
   a.prototype.constructor = a;
+  a.prototype.parent = b.prototype;
 };
